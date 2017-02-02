@@ -1,4 +1,17 @@
-<!--앱이 로드되기 전에 템플릿이 포함된 화면이 깜빡거리는 경우, `ng-cloak` 디렉티브를 사용하면 된다.-->
-<div ng-cloak>
+<!DOCTYPE html>
+<div class="container">
+  <div class="jumbotron" style="padding-bottom:0px;">
+    <h2>My First Web!</h2>
+  </div>
+  <form>
+    <input class="form-control" placeholder="Email address">
+    <input class="form-control" placeholder="Password">
+    <!--<input type="email" class="form-control" placeholder="Email address" required="" autofocus="">-->
+    <!--<input type="password" class="form-control" placeholder="Password" required="">-->
+    <label class="checkbox">
+      <a href="#">Sign Up</a>
+    </label>
+    <button class="btn btn-lg btn-primary btn-block" ng-click="onLogin()" type="submit">Sign in</button>
+  </form>
 
 </div>
